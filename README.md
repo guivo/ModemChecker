@@ -24,6 +24,13 @@ example schedules the script, copied in the `$HOME/bin` directory, to run every 
 */10 * * * * /home/osmc/bin/publicIP.sh
 ```
 
-## Analysis
+## Analysis idea
 
-The 
+The log file allows to monitor relevant information at a fixed frequency. The current
+script allows to monitor the public IP, this usually changes when the modem has to reconnect
+to the network for every reason. The simpest analysis that I propose is to monitor how
+often the IP of your network changes, e.g. measuring how often per hour the IP has changed over
+time.
+
+This represent a first probe of the network stability and can be used as documentation
+of an existing problem. The analysis is showed here in the [analysis.ipynb]
