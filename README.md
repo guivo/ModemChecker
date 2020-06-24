@@ -11,7 +11,7 @@ The latter can be the Raspberry Pi itself but a more powerfull machine maybe mor
 
 ### Install script
 
-Copy the  [publicIP.sh] script on the *moniting PC* and **edit** the location where the log 
+Copy the [publicIP.sh](publicIP.sh) script on the *moniting PC* and **edit** the location where the log 
 file is created according the specific setup. Because the script will be execute by **crontab**
 job scheduler it is suggested to specify the location of the log as absolute path.
 
@@ -33,4 +33,4 @@ often the IP of your network changes, e.g. measuring how often per hour the IP h
 time.
 
 This represent a first probe of the network stability and can be used as documentation
-of an existing problem. The analysis is showed here in the [analysis.ipynb]
+of an existing problem. The analysis is showed in the [analysis notebook](analysis.ipynb).
